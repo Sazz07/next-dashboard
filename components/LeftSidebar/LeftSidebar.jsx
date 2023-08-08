@@ -17,7 +17,7 @@ export default function LeftSidebar() {
     const [expand, setIsExpand] = useState(false);
 
     return (
-        <div className='w-full md:w-60 h-full lg:h-screen sticky top-0 bg-gray-200 py-5'>
+        <aside className='w-full md:w-60 h-full lg:h-screen sticky top-0 bg-gray-200 py-5'>
             <Link href={'/'}>
                 <h1 className="text-center text-2xl font-bold">Dashboard</h1>
             </Link>
@@ -26,8 +26,10 @@ export default function LeftSidebar() {
                     {menu.map((item, index) => (
                         <li
                             key={index}
-                            className={`p-3 rounded ${pathName === item.href ? 'bg-gray-300 text-cyan-700' : 'hover:bg-gray-300 hover:text-cyan-700'} font-medium cursor-pointer hidden md:block`}>
-                            <Link href={item.href}>
+                        >
+                            <Link href={item.href}
+                                className={`p-3 rounded ${pathName === item.href ? 'bg-gray-300 text-cyan-700' : 'hover:bg-gray-300 hover:text-cyan-700'} font-medium cursor-pointer hidden md:block`}
+                            >
                                 {item.name}
                             </Link>
                         </li>
@@ -62,6 +64,6 @@ export default function LeftSidebar() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </aside>
     )
 }

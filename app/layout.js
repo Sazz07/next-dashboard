@@ -14,9 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <main className='flex flex-col md:flex-row'>
-          <aside className=''>
             <LeftSidebar />
-          </aside>
           <section className='shrink w-full p-10'>{children}</section>
         </main>
       </body>
