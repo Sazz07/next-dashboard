@@ -34,8 +34,8 @@ export default function ProductsTable({ products }) {
                                     {product.category}
                                 </span>
                                 </td>
-                                <td className="text-left py-3 px-4"><span className="hover:text-cyan-500">{product.price}</span></td>
-                                <td className="text-left py-3 px-4">
+                                <td className="text-left py-3 px-4"><span className="hover:text-cyan-500">${product.price}</span></td>
+                                <td className="text-left py-3 px-4 font-medium">
                                     <span className={`${product.availability ? "text-green-500" : "text-red-500"} font-medium`}>{product.availability ? "Available" : "Out of Stock"}
                                     </span>
                                 </td>
