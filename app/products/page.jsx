@@ -205,7 +205,6 @@ const products = [
         "ratings": 4.3,
         "reviews": 80
     }
-    // Add more product objects here...
 ];
 
 const categories = [

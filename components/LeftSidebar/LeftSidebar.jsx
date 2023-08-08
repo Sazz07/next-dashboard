@@ -12,12 +12,11 @@ const menu = [
 
 
 export default function LeftSidebar() {
-    const router = useRouter();
     const pathName = usePathname();
     const [expand, setIsExpand] = useState(false);
 
     return (
-        <aside className='w-full md:w-60 h-full md:h-screen md:sticky md:top-0 bg-gray-50 md:bg-gray-100 py-5 border-r'>
+        <aside className='w-full md:w-72 h-full md:h-screen md:sticky md:top-0 bg-gray-50 md:bg-gray-100 pt-5 border-r'>
             <Link href={'/'}>
                 <h1 className="text-center text-2xl font-bold">Dashboard</h1>
             </Link>
