@@ -1,3 +1,4 @@
+import LeftSidebar from '@/components/LeftSidebar/LeftSidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className='flex flex-col md:flex-row'>
+          <aside className=''>
+            <LeftSidebar />
+          </aside>
+          <section className='shrink w-full p-10'>{children}</section>
+        </main>
+      </body>
     </html>
   )
 }
