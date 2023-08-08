@@ -17,7 +17,7 @@ export default function LeftSidebar() {
     const [expand, setIsExpand] = useState(false);
 
     return (
-        <aside className='w-full md:w-60 h-full md:h-screen md:sticky md:top-0 bg-gray-200 py-5'>
+        <aside className='w-full md:w-60 h-full md:h-screen md:sticky md:top-0 bg-gray-50 md:bg-gray-200 py-5'>
             <Link href={'/'}>
                 <h1 className="text-center text-2xl font-bold">Dashboard</h1>
             </Link>
